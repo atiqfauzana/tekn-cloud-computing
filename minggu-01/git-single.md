@@ -4,39 +4,70 @@
 Sebelum install Git di Windows, anda harus sudah mempunyai editor teks yang didukung oleh Windws. Editor yang bisa dipilih banyak, tetapi disarankan menggunakan Notepad++ atau Visual Studion Code atau Vim. Keberadaan editor teks ini akan menentukan keberhasilan instalasi (lihat langkah 5).
 
 1. Setelah download Git, double click pada file yang di-download. Akan dimunculkan lisensi. Klik Next untuk lanjut.
+
 ![Install_Git](TC/Install_Git/gambar01.jpg)
+
 2. Setelah itu, pilih lokasi instalasi. Secara default akan terisi C:\Program Files\Git. Ganti lokasi jika memang anda menginginkan lokasi lain, klik Next
+
 ![Install_Git](TC/Install_Git/gambar02.jpg)
+
 3. Pilih komponen. Tidak perlu diubah-ubah, sesuai dengan default saja. Klik pada Next.
+
 ![Install_Git](TC/Install_Git/gambar03.jpg)
+
 4. Mengisi shortcut untuk menu Start. Gunakan default (Git), ganti jika ingin mengganti - misalnya Git VCS.
+
 ![Install_Git](TC/Install_Git/gambar04.jpg)
+
 5. Pilih editor yang akan digunakan bersama dengan Git. Pada pilihan ini, digunakan Notepad++.Pilih editor yang akan digunakan bersama dengan Git. Pada pilihan ini, digunakan Notepad++.
+
 ![Install_Git](TC/Install_Git/gambar05.jpg)
+
 6. Pada saat instalasi, Git menyediakan akses git melalui Bash maupun command prompt. Pilih pilihan kedua supaya bisa menggunakan dari dua antarmuka tersebut. Bash adalah shell di Linux. Dengan menggunakan bash di Windows, pekerjaan di command line Windows bisa dilakukan menggunakan bash - termasuk ekskusi dari Git.
+
 ![Install_Git](TC/Install_Git/gambar06.jpg)
+
 7. Pilih OpenSSL untuk HTTPS. Git menggunakan https untuk akes ke repo GitHub atau repo-repo lain (GitLab, Assembla).
+
 ![Install_Git](TC/Install_Git/gambar07.jpg)
+
 8. Pilih pilihan pertama untuk konversi akhir baris (CR-LF).
+
 ![Install_Git](TC/Install_Git/gambar08.jpg)
+
 9. Pilih PuTTY untuk terminal yang digunakan untuk mengakses Git Bash.
+
 ![Install_Git](TC/Install_Git/gambar09.jpg)
+
 10. Untuk opsi ekstra, pilih serta aktifkan 1 dan 2.
+
 ![Install_Git](TC/Install_Git/gambar10.jpg)
+
 11. Setelah itu proses instalasi akan dilakukan.
+
 ![Install_Git](TC/Install_Git/gambar11.jpg)
+
 12. Jika selesai akan muncul dialog pemberitahuan. Klik pada Finish.
+
 ![Install_Git](TC/Install_Git/gambar12.jpg)
+
 13. Untuk menjalankan, dari Start menu, ketikkan "Git", akan muncul beberapa pilihan. Pilih "Git Bash" atau "Git GUI".
+
 ![Install_Git](TC/Install_Git/gambar13.jpg)
+
 14. Tampilan jika akan menggunakan "Git Bash"
+
 ![Install_Git](TC/Install_Git/gambar14.jpg)
+
 15. Tampilan jika akan menggunakan "Git GUI"
+
 ![Install_Git](TC/Install_Git/gambar15.jpg)
+
 16. Untuk mencoba dari command prompt, masuk ke command prompt, setelah itu eksekusi "git --version" untuk melihat apakah sudah terinstall atau belum. Jika sudah terinstall dengan benar, makan akan muncul hasil berikut:
 
 
 ## Konfigurasi Git
+
 Bagian ini merupakan seri tulisan tentang Git. Silahkan ke README.md untuk memahami gambaran garis besar materi-materi yang dituliskan.
 
 Secara minimal, user harus memberitahu Git tentang username serta email yang digunakan setiap kali terjadi perubahan pada repo Git. Username serta email ini yang akan dimasukkan oleh Git ke catatan perubahan di repo. Di sistem operasi Linux atau sejanis (UNIX), konfigurasi ini nantinya akan disimpan di $HOME/.gitconfig. Untuk sistem operasi Windows, konfigurasi ini akan disimpan di C:\Document and Settings\NamaUser dengan nama file .gitconfig. Secara minimal, ada 2 hal yang perlu dikonfigurasi yaitu username dan email. Gunakan perintah berikut:
@@ -49,7 +80,9 @@ user.email=phylossophie@gmail.com
 user.name=Bambang Purnomosidi D. P.
 color.ui=true
 $
+
 ![Konfigurasi_Git](TC/Konfigurasi_Git/gambar16.jpg)
+
 Langkah ini cukup dilakukan sekali saja, kecuali jika ingin melakukan perubahan nama dan email.
 
 Bagian ini merupakan seri tulisan tentang Git. Silahkan ke README.md untuk memahami gambaran garis besar materi-materi yang dituliskan.
@@ -73,13 +106,18 @@ Membuat Repo
 Untuk membuat repo, gunakan langkah-langkan berikut:
 
 1. Klik tanda + pada bagian atas setelah login, pilih New repository
+
 ![membuat_repo](TC/membuat_repo/gambar17.jpg)
+
 2. Isikan nama, keterangan, serta lisensi. Jika dikehendaki, bisa membuat repo Private
+
 ![membuat_repo](TC/membuat_repo/gambar18.jpg)
 
 ## Clone Repo
 Proses clone adalah proses untuk menduplikasikan remote repo di GitHub ke komputer lokal. Untuk melakukan proses clone, gunakan perintah berikut:
+
 ![Clone_Repo](TC/Clone_Repo/gambar19.jpg)
+
 Setelah perintah ini, di direktori awesome-project akan disimpan isi repo yang sama dengan di GitHub. Perbedaannya, di komputer lokal terdapat direktori .git yang digunakan secara internal oleh Git.
 
 Mengelola Repo
@@ -93,7 +131,9 @@ File diedit
 Membuat file / direktori baru
 Menghapus direktori
 Untuk kasus-kasus tersebut, lakukan perubahan di komputer lokal, setelah itu push ke repo.
+
 ![Clone_Repo](TC/Clone_Repo/gambar20.jpg)
+
 Cara ini lebih mudah tetapi mempunyai resiko jika terjadi kesalahan dalam edit. Cara yang lebih aman tetapi memerlukan langkah yang lebih panjang adalah branching and merging
 
 Mengubah Isi dengan Branching and Merging
@@ -107,10 +147,15 @@ Buat pull request di GitHub
 Merge pull request di GitHub
 Merge branch untuk menampung perubahan-perubahan tersebut ke master.
 Selesai.
+
 ![Clone_Repo](TC/Clone_Repo/gambar21.jpg)
+
 Setelah itu, kirim pull request (PR):
+
 ![Clone_Repo](TC/Clone_Repo/gambar22.jpg)
+
 Setelah itu, Confirm Merge, branch yang kita kirimkan tadi sudah dimasukkan ke branch master. Setelah itu, merge di komputer lokal:
+
 ![Clone_Repo](TC/Clone_Repo/gambar23.jpg)
 
 ## Sinkronisasi
@@ -121,11 +166,14 @@ Perintah ini dikerjakan di direktori tempat repo lokal kita berada.
 
 Membatalkan Perubahan
 Praktik yang baik adalah membuat branch pada saat kita akan melakukan perubahan-perubahan. Jika perubahan-perubahan yang kita lakukan sudah sedemikian kacaunya, maka kita bisa membuat supaya perubahan-perubahan yang kacau tersebut hilang dan kembali ke kondisi bersih seperti semula.
+
 ![Clone_Repo](TC/Clone_Repo/gambar24.jpg)
 
 # Undo Commit Terakhir
 Suatu saat, mungkin kita sudah terlanjur mem-push perubahan ke repo GitHub, setelah itu kita baru menyadari bahwa perubahan tersebut salah. Untuk itu, kita bisa melakukan git revert.
+
 ![Clone_Repo](TC/Clone_Repo/gambar25.jpg)
+
 Contoh di atas adalah contoh untuk mengubah README.md dengan beberapa commit. Setelh itu, kita akan mengembalikan ke posisi terakhir sebelum commit terakhir.
 
 $ git revert HEAD
@@ -135,9 +183,13 @@ Perintah di atas akan membuka editor. Pada editor tersebut kita bisa mengetikkan
  1 file changed, 1 deletion(-)
 $
 Selanjutnya, tinggal di-push ke repo GitHub.
+
 ![Clone_Repo](TC/Clone_Repo/gambar26.jpg)
+
 Jika commit sudah dilakukan, tetapi belum di-push ke repo GitHub (masih berada di lokal), cara membatalkannya:
+
 ![Clone_Repo](TC/Clone_Repo/gambar27.jpg)
+
 Untuk kembali ke perubahan pada saat yang sudah lama, yang perlu dilakukan adalah melakukan git revert <posisi> kemudian mengedit secara manual kemudian push ke repo.
 Setelah itu, jika dilihat pada file, akan muncul tambahan untuk memudahkan meng-edit. File ini harus di-resolve terlebih dahulu, setelah itu baru di add dan commit:
 Edit file tersebut, setelah itu simpan.
